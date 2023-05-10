@@ -76,6 +76,8 @@ SET(CLANG_WARNINGS "-ferror-limit=0 -Wall -Wextra -Werror -Wstrict-aliasing=2 -W
     -Wno-unused-macros \
     -Wno-unused-member-function \
     -Wno-unused-private-field \
+    -Wno-unused-but-set-variable \
+    -Wno-unused-variable \
     -Wno-used-but-marked-unused \
     -Wno-weak-template-vtables \
     -Wno-weak-vtables \
