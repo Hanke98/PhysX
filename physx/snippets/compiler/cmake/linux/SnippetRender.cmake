@@ -61,7 +61,7 @@ ENDIF()
 SET(SNIPPETRENDER_PLATFORM_INCLUDES)
 
 # gwoolery: aarch64 requires glut library to be lower case, for whatever reason
-IF(CMAKE_SYSTEM_PROCESSOR STREQUAL "aarch64")
+IF(CMAKE_SYSTEM_PROCESSOR STREQUAL "aarch64" OR USE_LOWER_CASE_GLUT)
 	SET(GLUT_LIB "glut")
 ELSE()
 	SET(GLUT_LIB "GLUT")
