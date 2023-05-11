@@ -29,7 +29,8 @@
 #
 
 IF(NOT ${CMAKE_SYSTEM_PROCESSOR} STREQUAL "aarch64")
-	find_package(OpenGL $ENV{PM_OpenGL_VERSION} CONFIG REQUIRED) # Pull in OpenGL and GLUT
+	# find_package(OpenGL $ENV{PM_OpenGL_VERSION} CONFIG REQUIRED) # Pull in OpenGL and GLUT
+	find_package(OpenGL REQUIRED) # Pull in OpenGL and GLUT
 ENDIF()
 IF(NOT PUBLIC_RELEASE)
 	find_package(CUDA $ENV{PM_CUDA_Version} REQUIRED)
